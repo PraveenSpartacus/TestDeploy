@@ -2,54 +2,7 @@
     
     
     
-    <style>
-        svg#freepik_stories-scrum-board:not(.animated) .animable {
-            opacity: 0;
-        }
-        
-        svg#freepik_stories-scrum-board.animated #freepik--Plant--inject-32 {
-            animation: 1.5s Infinite linear wind;
-            animation-delay: 0s;
-            fill: black;
-        }
-        svg#freepik_stories-scrum-board.animated #freepik--Gears--inject-32 {
-            animation: 1.5s Infinite linear wind;
-            animation-delay: 0s;
-        }
-        svg#freepik_stories-scrum-board.animated #freepik--Board--inject-32 {
-            animation: 1.5s Infinite linear floating;
-            animation-delay: 0s;
-        }
-        
-        @keyframes wind {
-            0% {
-                transform: rotate(0deg);
-            }
-            25% {
-                transform: rotate(1deg);
-            }
-            75% {
-                transform: rotate(-1deg);
-            }
-        }
-        @keyframes floating {
-            0% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-        
-        .animator-hidden {
-            display: none;
-        }
-    </style>
+    
     <g id="freepik--Floor--inject-32" class="animable animator-active animator-hidden" style="transform-origin: 250px 346.12px;">
         <ellipse id="freepik--floor--inject-32" cx="250" cy="346.12" rx="215.28" ry="124.29" style="fill: rgb(245, 245, 245); transform-origin: 250px 346.12px;" class="animable"></ellipse>
     </g>

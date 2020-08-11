@@ -194,6 +194,10 @@
     width: 325px;
 }
 
+.marq .item:hover{
+    animation-play-state: paused;
+}
+
 @keyframes marquee {
     0% {
         left: 100%;
@@ -278,15 +282,20 @@
     transform: scale(1.1);
 }
 .card .box {
+    position: relative;
     width: 100%;
     height: 85%;
     background-color: #80ff0000;
     overflow: hidden;
 }
 .box img {
+    position: absolute;
     height: 100%;
     width: 100%;
     transition: transform 0.5s;
+}
+.imgBack{
+    display: none;
 }
 .card h4 {
     width: 100%;
@@ -377,6 +386,12 @@ footer {
     .card {
         border-radius: 14px;
     }
+    .imgBack{
+        display: block;
+    }
+    .imgFront{
+        display: none;
+    }
 }
 @media screen and (max-width: 780px) {
     .navbar .navlist {
@@ -397,6 +412,11 @@ footer {
     .foot2 {
         margin-top: 50px;
     }
+    .marq .item:hover{
+        animation-play-state: none;
+    }
+    
+    
     /* .marq .item > a{
         font-size: 14px;
     } */
