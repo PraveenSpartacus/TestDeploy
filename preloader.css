@@ -1,1 +1,33 @@
-.page{display:none}.preloader{height:100px;width:100px;justify-content:space-evenly;display:flex;align-items:center;flex-direction:column;margin-top:calc(50vh - 70px);margin-left:calc(50vw - 50px)}.preloader .span{width:40px;height:40px;background-color:#1455ce;animation:tocircle .8s infinite alternate ease-in,rot 1.5s infinite linear}@keyframes tocircle{0%{border-radius:0}100%{border-radius:50%}}@keyframes rot{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.load{color:var(--heading);font-size:16px;font-weight:600}
+.page {
+    display: none;
+}
+.preloader {
+    height: 100px;
+    width: 100px;
+    
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: calc(50vh - 70px);
+    margin-left: calc(50vw - 50px);
+}
+/* .preloader .span {
+    width: 40px;
+    height: 40px;
+    background-color: #1455ce;
+    animation: tocircle 0.8s infinite alternate ease-in, rot 1.5s infinite linear;
+} */
+#logo{
+    width: 100px;
+    height: 50px;
+}
+#logo path{
+    stroke: var(--heading);
+}
+.load {
+    color: var(--heading);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}

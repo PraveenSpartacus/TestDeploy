@@ -392,6 +392,9 @@ footer {
     .imgFront{
         display: none;
     }
+    .card:hover > .box img {
+        transform: none;
+    }
 }
 @media screen and (max-width: 780px) {
     .navbar .navlist {
