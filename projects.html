@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="fade.css">
+    <link rel="stylesheet" href="nav_foot.css">
+    <link rel="stylesheet" href="projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Projects</title>
+</head>
+<body id="body">
+    <div class="preloader" id="preloader">
+        <div class="span">
+            
+        </div>
+        <div class="load">Loading...</div>
+    </div>
+    <div class="page" id="page">
+
+        <!-- navbar-start -->
+
+        <div class="navbar">
+            <img src="images/newgen1.png" alt="">
+            <div class="navlist">
+                <a href="index.html">Home</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="infrastructure.html">Infrastructure</a>
+                <a href="events.html">Events</a>
+                <a href="projects.html" style="border-bottom: 2px rvar(--nav-clr) solid;">Projects</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <img id="iedc" src="images/iedc.png" alt="">
+
+        <div class="burger" onclick="navAni()">
+            <span></span>
+            <span class="centerspan"></span>
+            <span></span>
+        </div>
+        <div class="black" id="black" onclick="navAniRev()"></div>
+        <div class="navlist2" id="navlist2">
+
+            <div class="x" onclick="navAniRev()">
+                <span></span>
+                <span></span>
+            </div>
+            <a class="home2" href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="infrastructure.html">Infrastructure</a>
+            <a href="events.html">Events</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="icons">
+                <a href=""><img src="images/twitter.svg" alt=""></a>
+                <a href=""><img src="images/instagram.svg" alt=""></a>
+                <a href=""><img src="images/facebook-logo.svg" alt=""></a>
+            </div>
+        </div>
+
+        <!-- navbar-end -->
+
+        <img src="images/studentprojects.png" class="heading" alt="">
+
+        <div class="imgCon">
+            <a href="images/Newgen IEDC-Progres Report format.pdf" target="_blank">
+                <img class="img animateR" src="images/17-18.svg" alt="">
+            </a>
+            <a href="images/Annexure-IV Progress Report Proforma-A.Y-2018-2019. Version-1 (2).pdf" target="_blank">
+                <img class="animateR" src="images/18-19.svg" alt="">
+            </a>
+        </div>
+
+        <div class="space"></div>
+
+
+        
+         <!-- footer-start -->
+
+         <footer>
+            <div class="foot1">
+                <img src="images/newgen1.png" alt="">
+                <div class="social">
+                    <img src="images/twitter.svg" alt="">
+                    <img src="images/linkedin.svg" alt="">
+                    <img src="images/facebook-logo.svg" alt="">
+                    <img src="images/pinterest.svg" alt="">
+                    <img src="images/instagram.svg" alt="">
+                </div>
+            </div>
+            <div class="foot2">
+                Copyright 2020 © <a target="_blank" href="http://ivss.ml/?i=1">IVSS</a><br>
+                Designed by IVSS
+            </div>
+        </footer>
+
+        <!-- footer-end -->
+
+        <div class="mode" id="mode" >
+            <img class="moon op0" id="moon" src="images/moon.svg" alt="">
+            <img class="sun" id="sun" src="images/sun.svg" alt="">
+        </div>
+
+    </div>
+</body>
+<script src="animate.js"></script>
+<script>
+    let preloader = document.getElementById("preloader");
+    let page = document.getElementById("page");
+    window.onload = function(){
+        preloader.style.display = "none";
+        page.style.display = "block";
+        animate2();
+        window.onscroll = function(){
+        animate2();
+        }
+    }
+</script>
+<script src="menu.js"></script>
+</html>

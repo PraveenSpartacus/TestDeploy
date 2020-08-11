@@ -1,0 +1,1 @@
+let navlist2=document.getElementById("navlist2"),black=document.getElementById("black"),body=document.getElementById("body");function navAni(){navlist2.classList.add("navAni"),black.style.display="block",body.classList.add("cut")}function navAniRev(){navlist2.classList.remove("navAni"),black.style.display="none",body.classList.remove("cut")}
