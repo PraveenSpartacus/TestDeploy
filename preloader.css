@@ -1,6 +1,12 @@
 .page {
     display: none;
 }
+@keyframes letter{
+    to{
+        stroke-dashoffset: 0px;
+    }
+    
+}
 .preloader {
     height: 100px;
     width: 100px;
