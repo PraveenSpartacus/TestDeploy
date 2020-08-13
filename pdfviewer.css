@@ -6,6 +6,11 @@
     left: 15vw;
     display: none;
     animation: up 0.5s linear forwards;
+    overflow: scroll;
+    background-color: rgb(107, 107, 107);
+}
+.pdfviewer img{
+    width: 100%;
 }
 @keyframes up{
     0%{
@@ -28,4 +33,11 @@
 }
 .pdfON{
     display: block;
+}
+
+@media screen and (max-device-width: 800px) and (orientation: portrait)
+{
+    .pdfviewer{
+        height: fit-content;
+    }
 }
