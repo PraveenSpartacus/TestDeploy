@@ -277,6 +277,7 @@
     overflow: hidden;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.329);
     cursor: pointer;
+    transition: height 0.4s;
 }
 .card:hover > .box img {
     transform: scale(1.1);

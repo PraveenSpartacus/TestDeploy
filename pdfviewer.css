@@ -1,0 +1,31 @@
+.pdfviewer{
+    width: 70vw;
+    height: 80vh;
+    position: fixed;
+    top: 10vh;
+    left: 15vw;
+    display: none;
+    animation: up 0.5s linear forwards;
+}
+@keyframes up{
+    0%{
+        top: 20vh;
+        opacity: 0;
+    }
+    100%{
+        top: 10vh;
+        opacity: 1;
+    }
+}
+
+.blackPDF{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: calc(100vw - calc(100vw - 100%));
+    background-color: rgba(0, 0, 0, 0.74);
+    display: none;
+}
+.pdfON{
+    display: block;
+}

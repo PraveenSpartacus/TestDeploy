@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fade.css">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pdfviewer.css">
 
     <title>IEDC</title>
 </head>
@@ -151,7 +152,7 @@
                 <h4>Infrastructure</h4>
             </div>
 
-            <div class="card animateR" id="card4" onclick="window.location.href = 'aboutUs.html';">
+            <div class="card animateR" id="card4" onclick="viewPDF()">
                 <div class="box">
                     <img class="imgBack" src="images/committieB.svg" alt="">
                     <img class="imgFront" src="images/committie.svg" alt="" srcset="">
@@ -179,6 +180,12 @@
 
 
 
+        <div onclick="pdfOFF()" id="blackPDF" class="blackPDF"></div>
+        <iframe src="images/comittee.pdf#view=FITH" frameborder="0" id="pdfviewer" class="pdfviewer"></iframe>
+
+
+
+
         
         
         <footer>
@@ -197,6 +204,10 @@
                 Designed by IVSS
             </div>
         </footer>
+
+
+
+
 
         <div class="mode" id="mode" >
             <img class="moon op0" id="moon" src="images/moon.svg" alt="">
